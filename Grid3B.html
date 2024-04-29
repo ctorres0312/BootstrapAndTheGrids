@@ -36,10 +36,10 @@
                     <a class="nav-link" href="/Grid2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Grid3.html">Grid 3</a>
+                    <a class="nav-link active" aria-current="page" href="/Grid3.html">Grid 3</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Grid4.html">Grid 4</a>
+                    <a class="nav-link" href="/Grid4.html">Grid 4</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid5.html">Grid 5</a>
@@ -63,20 +63,46 @@
 
     <main class="flex-shrink-0">
        <div class="container h-100 minHeight">
-            <div class="row h-100 row-cols-1 row-cols-md-3 gy-3">
-                <div class="col">
-                    <div class="bg-secondary text-light h-100">
-                        COL ONE
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="Grid3.html" class="nav-link">Grid 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="Grid3B.html" class="nav-link active" aria-current="page">Grid 3B</a>
+            </li>
+        </ul>
+            <div class="row h-100">
+                <!-- LEFT COLOUMN -->
+                <div class="col-7">
+                    <div class="bg-secondary text-light p-2 h-100">
+                        <h1>Article Title</h1>
+                        <p>Lorem ipsum dolor sit amet. Id eaque galisum et libero molestiae 33 ratione dignissimos ut ipsa sunt. Quo omnis aliquid est corrupti quam et excepturi omnis ad veritatis totam hic autem vero et odit voluptatem. Et necessitatibus expedita est amet corrupti vel aliquam voluptatibus sit rerum voluptates non vero voluptate sit ducimus dicta. </p><p>A internos ipsam qui quis asperiores et accusantium assumenda. Vel possimus reprehenderit et possimus aspernatur vel laborum iste est eius Quis. </p>
+                        <p>Lorem ipsum dolor sit amet. Id eaque galisum et libero molestiae 33 ratione dignissimos ut ipsa sunt. Quo omnis aliquid est corrupti quam et excepturi omnis ad veritatis totam hic autem vero et odit voluptatem. Et necessitatibus expedita est amet corrupti vel aliquam voluptatibus sit rerum voluptates non vero voluptate sit ducimus dicta. </p><p>A internos ipsam qui quis asperiores et accusantium assumenda. Vel possimus reprehenderit et possimus aspernatur vel laborum iste est eius Quis. </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="bg-dark text-light h-100">
-                        COL TWO
+                <!-- RIGHT COLOUMN -->
+                <div class="col-5">
+                    <!-- RIGHT TOP COLUMN -->
+                    <div class="bg-secondary text-light p-2">
+                       <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                       </form>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="bg-secondary text-light h-100">
-                        COL THREE
+                    <!-- RIGHT BOTTOM COLUMN -->
+                    <div class="bg-dark text-light mt-2 p-2">
+                        <h5>More Articles</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article Two</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article Three</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
